@@ -51,7 +51,7 @@
 $result = $conn->query($sql);
 if($result->num_rows > 0){
 	while ($row = $result-> fetch_assoc()) {
-		echo "<a href='profile.php?id=" . 
+		echo "<a href='book.php?id=" . 
 		       $row[bookId] . 
 		       "'>" . 
 		       $row["bookTitle"]. "</a>"."<br>";
